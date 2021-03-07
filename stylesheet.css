@@ -13,11 +13,15 @@ body {
 }
 .peach {
 	background-color: rgb(189, 184, 184);
-	background-image: url(bg.jpg);
-	background-size: 100%;
-	
 }
 
+@media screen and (max-width: 500px) {
+	.peach {
+		background-image: url(bg.jpg);
+		background-size: 100%;
+	}
+
+})
 
 .peach-after {
 	-webkit-animation:peach_alive linear 8s infinite;
@@ -1287,7 +1291,7 @@ audio {
 
 .btn-primary {
         border-color: #466baf;
-        padding: 10px;
+        padding: 19px;
         text-transform: uppercase;
         font-family: 'Signika', sans-serif;
         font-weight: 700;
@@ -1313,7 +1317,9 @@ audio {
     	}
     }*/
 
-	.foto {
+
+
+.foto {
     display: flex;
     justify-content: center;
 }
