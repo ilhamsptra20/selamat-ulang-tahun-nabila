@@ -150,13 +150,13 @@ $('document').ready(function(){
 		$('#b5').attr('id','b55')
 		$('#b6').attr('id','b66')
 		$('#b7').attr('id','b77')
-		$('#b11').animate({top:350, left: vw-350},500);
-		$('#b22').animate({top:350, left: vw-250},500);
-		$('#b33').animate({top:350, left: vw-150},500);
-		$('#b44').animate({top:350, left: vw-50},500);
-		$('#b55').animate({top:350, left: vw+50},500);
-		$('#b66').animate({top:350, left: vw+150},500);
-		$('#b77').animate({top:350, left: vw+250},500);
+		$("#b11").animate({ top: 300, left: vw - 350 }, 500);
+    $("#b22").animate({ top: 300, left: vw - 250 }, 500);
+    $("#b33").animate({ top: 300, left: vw - 150 }, 500);
+    $("#b44").animate({ top: 300, left: vw - 50 }, 500);
+    $("#b55").animate({ top: 300, left: vw + 50 }, 500);
+    $("#b66").animate({ top: 300, left: vw + 150 }, 500);
+    $("#b77").animate({ top: 300, left: vw + 250 }, 500);
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(3000);
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
@@ -175,17 +175,19 @@ $('document').ready(function(){
 		function msgLoop (i) {
 			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(3000);
-			if (i == 54) {
+			$("p:nth-child(" + i + ")")
+        .fadeIn("slow")
+        .delay(3000);
+      if (i == 67) {
         $("p:nth-child(49)")
-        	.fadeOut("slow")
-        	.promise()
-        	.done(function () {
+          .fadeOut("slow")
+          .promise()
+          .done(function () {
             $(".cake").fadeIn("fast");
-        });
-    	} else {
-        	msgLoop(i);
-    	}			
+          });
+      } else {
+        msgLoop(i);
+      }			
 
 		});
 			// body...

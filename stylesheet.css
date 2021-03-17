@@ -1273,7 +1273,7 @@ audio {
 }
 
 .cake-cover {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .message {
 	margin-top: 200px;
@@ -1281,9 +1281,9 @@ audio {
 }
 .message p {
 	font-family: 'Signika', sans-serif;
-	font-size: 30px;
+	font-size: 25px;
 	text-transform: uppercase;
-	color: #00d9ff;
+	color: #06798c;
 	text-shadow: 2px 2px 2px #FFF;
 	display: none;
 	font-weight: bold;
