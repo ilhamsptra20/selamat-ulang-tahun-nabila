@@ -140,7 +140,7 @@ $('document').ready(function(){
 
 		
 	$('#wish_message').click(function(){
-		 vw = $(window).width()/2;
+		vw = $(window).width()/2;
 
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
 		$('#b1').attr('id','b11');
@@ -175,16 +175,17 @@ $('document').ready(function(){
 		function msgLoop (i) {
 			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
 			i=i+1;
-			$("p:nth-child("+i+")").fadeIn('slow').delay(2500);
-			if(i==50){
-				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
-					$('.cake').fadeIn('fast');
-				});
-				
-			}
-			else{
-				msgLoop(i);
-			}			
+			$("p:nth-child("+i+")").fadeIn('slow').delay(3000);
+			if (i == 54) {
+        $("p:nth-child(49)")
+        	.fadeOut("slow")
+        	.promise()
+        	.done(function () {
+            $(".cake").fadeIn("fast");
+        });
+    	} else {
+        	msgLoop(i);
+    	}			
 
 		});
 			// body...
