@@ -177,7 +177,7 @@ $('document').ready(function(){
 			i=i+1;
 			$("p:nth-child(" + i + ")")
         .fadeIn("slow")
-        .delay(3000);
+        .delay(2500);
       if (i == 68) {
         $("p:nth-child(49)")
           .fadeOut("slow")
